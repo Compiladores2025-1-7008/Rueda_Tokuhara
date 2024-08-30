@@ -123,25 +123,33 @@ f. Ejecutar mediante: ```java Lexer input.txt```
 
 #### Ejercicios 
 1. ¿Qué ocurre si en la primera sección se quitan las llaves al nombre de la macro letra? (0.5 pts)
+   
    Ya no identifica las palabras completas, solo las letras pero como no tenemos nada definido para letras individuales en la parte de los print, solo pasa las letras una por una y las pone en pantalla.
+   
    ![Paso 1](https://github.com/user-attachments/assets/ca766eef-b4fc-4bed-9587-21d1852dc465)
 
 
 2. ¿Qué ocurre si en la segunda sección se quitan las llaves a las macros? (0.5 pts)
+   
    Ya no reconoce ninguna palabra ni digitos y solo pasa el texto plano como lo tenemos en el .txt.
+   
    ![Paso 2](https://github.com/user-attachments/assets/be1b3a92-0a7a-499f-809e-d16959c6e130)
 
 3. ¿Cómo se escribe un comentario en flex? (0.5 pts)
+   
    Con // para comentarios de una linea y con /* * */ para varias lineas.
    
 4. ¿Qué se guarda en yytext? (0.5 pts)
+   
    El caracter o conjunto de caracteres que el lexer acaba de analizar y lo busca en nuestras expresiones regulares.
    
 5. ¿Qué pasa al ejecutar el programa e introducir cadenas de caracteres y de dígitos sin especios en el archivo de entrada? (0.5 pts)
+   
 Toma como palabra o digito toda la cadena hasta que se encuentra con algo que no pertenece a esa expresion regular, entonces toma como palabra a "Hay", luego como digito a "100" y todo lo que resta como 1 sola palabra porque no hay espacio que la separe. 
 ![Paso 5](https://github.com/user-attachments/assets/16bea039-16b9-4703-aeb3-25fa2b3fba87)
    
 6. ¿Qué ocurre si introducimos caracteres como "\*" en el archivo de entrada? (0.5 pts)
+    
    No los toma en cuenta porque no estan definidos en nuestras expresiones regulares, entonces solo las salta y no las imprime en pantalla.
    
 7. Modificar al código anterior en un archivo nuevo, de tal manera que reconozca lo siguiente: (2 pts)
@@ -149,9 +157,9 @@ Toma como palabra o digito toda la cadena hasta que se encuentra con algo que no
     2. 5 palabras reservadas del lenguaje Java.
     3. Los identificadores válidos del lenguaje Java, con longitud máxima de 32 caracteres (**Sugerencia**: use el operador {m,n}).
     4. Los espacios en blanco.
-  ![codigo](https://github.com/user-attachments/assets/0f89da37-858e-421a-b8c5-57c19d1113d2)
+   
+![codigo](https://github.com/user-attachments/assets/0f89da37-858e-421a-b8c5-57c19d1113d2)
 ![txt](https://github.com/user-attachments/assets/f383af7e-67af-44c9-9818-f22e6bd98955)
-
-   ![Paso 7](https://github.com/user-attachments/assets/4a64c288-2328-4886-baa1-35bf5f341104)
+![Paso 7](https://github.com/user-attachments/assets/4a64c288-2328-4886-baa1-35bf5f341104)
 
 
