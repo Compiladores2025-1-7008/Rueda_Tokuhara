@@ -144,22 +144,21 @@ f. Ejecutar mediante: ```java Lexer input.txt```
    El caracter o conjunto de caracteres que el lexer acaba de analizar y lo busca en nuestras expresiones regulares.
    
 5. ¿Qué pasa al ejecutar el programa e introducir cadenas de caracteres y de dígitos sin especios en el archivo de entrada? (0.5 pts)
+
+   Toma como palabra o digito toda la cadena hasta que se encuentra con algo que no pertenece a esa expresion regular, entonces toma como palabra a "Hay", luego como digito a "100" y todo lo que resta como 1 sola  palabra porque no hay espacio que la separe. 
+  ![Paso 5](https://github.com/user-attachments/assets/16bea039-16b9-4703-aeb3-25fa2b3fba87)
    
-Toma como palabra o digito toda la cadena hasta que se encuentra con algo que no pertenece a esa expresion regular, entonces toma como palabra a "Hay", luego como digito a "100" y todo lo que resta como 1 sola palabra porque no hay espacio que la separe. 
-![Paso 5](https://github.com/user-attachments/assets/16bea039-16b9-4703-aeb3-25fa2b3fba87)
-   
-6. ¿Qué ocurre si introducimos caracteres como "\*" en el archivo de entrada? (0.5 pts)
+7. ¿Qué ocurre si introducimos caracteres como "\*" en el archivo de entrada? (0.5 pts)
     
    No los toma en cuenta porque no estan definidos en nuestras expresiones regulares, entonces solo las salta y no las imprime en pantalla.
    
-7. Modificar al código anterior en un archivo nuevo, de tal manera que reconozca lo siguiente: (2 pts)
+8. Modificar al código anterior en un archivo nuevo, de tal manera que reconozca lo siguiente: (2 pts)
     1. La expresión regular para los hexadecimales en lenguaje Java.
     2. 5 palabras reservadas del lenguaje Java.
     3. Los identificadores válidos del lenguaje Java, con longitud máxima de 32 caracteres (**Sugerencia**: use el operador {m,n}).
     4. Los espacios en blanco.
-   
-![codigo](https://github.com/user-attachments/assets/0f89da37-858e-421a-b8c5-57c19d1113d2)
-![txt](https://github.com/user-attachments/assets/f383af7e-67af-44c9-9818-f22e6bd98955)
-![Paso 7](https://github.com/user-attachments/assets/4a64c288-2328-4886-baa1-35bf5f341104)
+   ![codigo](https://github.com/user-attachments/assets/0f89da37-858e-421a-b8c5-57c19d1113d2)
+  ![txt](https://github.com/user-attachments/assets/f383af7e-67af-44c9-9818-f22e6bd98955)
+  ![Paso 7](https://github.com/user-attachments/assets/4a64c288-2328-4886-baa1-35bf5f341104)
 
 
