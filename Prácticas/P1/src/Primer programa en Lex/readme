@@ -1,2 +1,2 @@
-En el .txt escribiremos los caracteres que queramos que reconozca el lexer/
-En la linea 19 falta un comentario que debe decir: "Los identificadores tienen que inicar con una letra o un guion bajo, despues puede ser una combinacion de palabras, guiones bajos o digitos de maximo 31 caracteres.
+Nuestro archivo se compila de la misma manera que está descrito en el reporte y en el .txt escribiremos los caracteres que queramos que reconozca el lexer.
+En la línea 19 falta un comentario que debe decir: "Los identificadores tienen que inicar con una letra o un guion bajo, despues puede ser una combinacion de palabras, guiones bajos o dígitos de maximo 31 caracteres.
