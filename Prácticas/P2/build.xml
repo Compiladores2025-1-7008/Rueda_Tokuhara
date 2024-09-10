@@ -1,0 +1,27 @@
+<project>
+
+    <target name="clean">
+        <delete dir="build"/>
+    </target>
+
+    <target name="compile">
+        <exec executable="jflex" failonerror="true">
+            <arg value="src/main/jflex/Lexer.flex"/>
+        </exec>
+        <mkdir dir="build/classes"/>
+        <javac srcdir="src" destdir="build/classes"/>
+    </target>
+
+    <target name="run">
+      <mkdir dir="build/jar"/>
+      <jar destfile="build/jar/prueba.jar" basedir="build/classes">
+          <manifest>
+              <attribute name="Main-Class" value="main.jflex.Lexer"/>
+          </manifest>
+      </jar>
+        <java jar="build/jar/prueba.jar" fork="true">
+            <arg value="src/tst/prueba.txt"/>
+        </java>
+    </target>
+
+</project>
